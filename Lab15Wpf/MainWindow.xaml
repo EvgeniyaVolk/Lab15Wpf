@@ -1,0 +1,252 @@
+﻿<Window x:Class="Lab15Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab15Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="docViewer">
+            <FlowDocument>
+                <Paragraph FontSize="24">
+                    <Floater Width="100" HorizontalAlignment="Left">
+                        <BlockUIContainer>
+                            <Image Source="D:\Microsoft Visual Studio\РАЗРАБОТКА ПО ТЕХНОЛОГИИ WINDOWS PRESENTATION FOUNDATION\Lab15Wpf\Lab15Wpf\Foto\4 Паспорт.jpg" />
+                        </BlockUIContainer>
+                    </Floater>
+                    Мейн-кун
+                </Paragraph>
+                <Paragraph>
+                    <Bold>
+                        Мейн-кун
+                    </Bold> – аборигенная порода американских кошек, характеризующаяся крупными размерами и внушительной массой тела. Представители породы – это надежные друзья и компаньоны, способные быстро завоевать любовь всей семьи.
+                </Paragraph>
+                <Paragraph FontSize="18">
+                    Содержание:
+                </Paragraph>
+                <Section FontStyle="Italic">
+                    <List MarkerStyle="Square">
+                        <ListItem>
+                            <Paragraph>
+                                <Hyperlink NavigateUri="#info">Краткая информация</Hyperlink>
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                <Hyperlink NavigateUri="#moments">Основные моменты
+                                </Hyperlink>
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                <Hyperlink>История породы мейн-кун
+                                </Hyperlink>
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                <Hyperlink>Внешность мейн-кунов
+                                </Hyperlink>
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                <Hyperlink>Характер мейн-куна
+                                </Hyperlink>
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                <Hyperlink>Уход и содержание
+                                </Hyperlink>
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                <Hyperlink>Как выбрать котенка
+                                </Hyperlink>
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                <Hyperlink>Сколько стоит мейн-кун
+                                </Hyperlink>
+                            </Paragraph>
+                        </ListItem>
+                    </List>
+                </Section>
+                <Paragraph x:Name="info" FontSize="18">
+                    <Run Foreground="Green">Краткая информация:
+                    </Run>
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="250"/>
+                        <TableColumn Width="100"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Название породы:
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Мейн-кун
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Страна происхождения:
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    США
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Время зарождения породы:
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    XIX век
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Рост (высота в холке):
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    25-41 см
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Продолжительность жизни:
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    12-15 лет
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                <Paragraph x:Name="moments" FontSize="18">
+                    <Run Foreground="Green">Основные моменты
+                    </Run>
+                </Paragraph>
+                <Paragraph>
+                    <Floater Width="140" HorizontalAlignment="Left" >
+                        <BlockUIContainer>
+                            <Image Source="D:\Microsoft Visual Studio\РАЗРАБОТКА ПО ТЕХНОЛОГИИ WINDOWS PRESENTATION FOUNDATION\Lab15Wpf\Lab15Wpf\Foto\2.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    Мейн-куны – великаны кошачьего мира. Вес взрослой особи мужского пола может достигать от 7 до 12 кг, кошки – от 4 до 7,5 кг.
+Хозяева мейн-кунов любят называть своих питомцев просто кунами.
+Невзирая на наличие богатой «шубки», представители этой породы не нуждаются в профессиональном груминге и способны обойтись домашним вычесыванием.
+Куны не флегматики и с удовольствием поддержат любую игру, если она затевается с утра или под вечер. А вот в дневное время животные предпочитают мирно подремать.
+Мейн-куны по праву считаются одной из лучших семейных пород. Они одинаково легко приживаются и в домах, и квартирах и не объявляют войну другим представителям фауны, вынужденным делить с ними общую территорию.
+С возрастом представители этой породы «отращивают» невероятное чувство собственного достоинства, самозабвенно предаваясь царственному возлежанию на всех свободных (а иногда и занятых) горизонтальных поверхностях в неожиданных позах.
+
+                </Paragraph>
+                <Paragraph FontSize="18">
+                    <Run Foreground="Green">История породы мейн-кун
+                    </Run>
+                </Paragraph>
+                <Paragraph>
+                    О существовании мейн-кунов мир узнал от американских заводчиков. Название породы переводится как «мэнский енот». И если с первым термином в этом словосочетании все ясно («мейн» – от названия американского штата Мэн), то второй требует уточнения. Необычный полосатый окрас и пушистые хвосты мейн-кунов породили среди бридеров легенду о том, что порода получена методом скрещивания представителя семейства кошачьих с енотом. Байка осталась байкой, но словечко «кун» (сокращение от англ. racoon – енот) к породе все же прилипло.
+Современные специалисты склонны считать, что история происхождения «расы» мейн-кунов гораздо прозаичнее. Коты в Америку были завезены достаточно давно, но это были преимущественно короткошерстные особи. Длинношерстные же котофеи прибыли на континент гораздо позже, вместе с первыми поселенцами из Старого Света. В результате, оказавшись в благоприятных для свободного скрещивания условиях, коренные обитатели и «приезжие» представители хвостато-усатой братии стали родоначальниками новой разновидности крупных длинношерстных кошек.
+
+                </Paragraph>
+                <Paragraph FontSize="18">
+                    <Run Foreground="Green">Внешность мейн-кунов
+                    </Run>
+                    <Floater Width="150" HorizontalAlignment="Left" >
+                        <BlockUIContainer>
+                            <Image Source="D:\Microsoft Visual Studio\РАЗРАБОТКА ПО ТЕХНОЛОГИИ WINDOWS PRESENTATION FOUNDATION\Lab15Wpf\Lab15Wpf\Foto\1 Охота.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+                <Paragraph>
+                    На внешний облик славного семейства мейн-кунов значительное влияние оказал климат Мэна: выжить в условиях холодной и снежной континентальной зимы без густого подшерстка очень сложно. Широкая, защищенная дополнительными пучками шерсти лапа – тоже полезное приспособление, помогающее скользить по ледяной корке, не проваливаясь в снег. Ну а внушительные размеры в условиях охоты на мелкую живность и вовсе неоценимое преимущество. Что касается современных представителей породы, то на их облике не могла не сказаться страсть европейских бридеров к экстремализации. 
+                    Сегодняшние мейн-куны значительно прибавили в размерах, их мордочки стали еще более вытянутыми, а уши существенно подросли.
+                </Paragraph>
+
+                <Paragraph FontSize="18">
+                    <Run Foreground="Green">Характер мейн-куна
+                    </Run>
+                    <Floater Width="150" HorizontalAlignment="Left" >
+                        <BlockUIContainer>
+                            <Image Source="D:\Microsoft Visual Studio\РАЗРАБОТКА ПО ТЕХНОЛОГИИ WINDOWS PRESENTATION FOUNDATION\Lab15Wpf\Lab15Wpf\Foto\3.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+                <Paragraph>
+                    Мейн-кунов часто называют кошками-компаньонами. Они дружелюбны, в меру спокойны, но при этом достаточно серьезны и вряд ли оценят панибратство. Коленям хозяина эти великаны предпочтут теплое местечко у его бока или в ногах, из-за чего представителей этой породы часто сравнивают с собаками. Кошки мейн-куны легко приживаются в семье, но при этом обязательно выделят одного человека, за которым будут ходить хвостиком. Еще одна во всех смыслах замечательная особенность породы – тонкий и совершенно не вяжущийся со столь грозным обликом голосок, благодаря которому куны частенько становятся героями смешных роликов в Интернете. Мяукают кошки редко, зато часто издают необычные звуки, похожие на мурчание.
+Что касается типичных кошачьих шалостей, то из-за исполинских размеров котофеев, они могут принимать масштабы стихийного бедствия. Слоновий топот, перевернутые цветочные горшки и разбитые чашки – от подобных сюрпризов не застрахован каждый заводчик. Единственное, что мешает «мэнским енотам» превратить вашу квартиру в постапокалиптический пейзаж, – это спокойный темперамент и страстная любовь к дневному сну. У многих особей обнаруживается сильная тяга к «водным аттракционам», так, что если хотите сохранить ванную комнату в относительном порядке, кунов в нее лучше не пускать.
+
+                </Paragraph>
+                <Paragraph FontSize="18">
+                    <Run Foreground="Green">Уход и содержание
+                    </Run>
+                </Paragraph>
+                <Paragraph>
+                    Идеальная среда обитания для мейн-куна – загородный дом, где животное сможет свободно прогуливаться и утолять свою страсть к охоте. Впрочем, заводчики утверждают, что при должном старании со стороны хозяина, кошки этой породы вполне способны адаптироваться и в городской квартире. Ну а экскурсии по лугам-лесам несложно заменить обычными променадами на шлейке. Если возможности часто выводить животное нет, стоит задуматься о приобретении высокого игрового комплекса, способного скрасить будни вашего питомца.
+                </Paragraph>
+                <Paragraph FontSize="18">
+                    <Run Foreground="Green">Как выбрать котенка
+                    </Run>
+                    <Floater Width="150" HorizontalAlignment="Left" >
+                        <BlockUIContainer>
+                            <Image Source="D:\Microsoft Visual Studio\РАЗРАБОТКА ПО ТЕХНОЛОГИИ WINDOWS PRESENTATION FOUNDATION\Lab15Wpf\Lab15Wpf\Foto\5.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                </Paragraph>
+                <Paragraph>
+                    Перед покупкой стоит определиться с полом, классом и видом животного. Кошечки породы мейн-кун – настоящие интеллектуалки и аккуратистки, но с твердым характером. Коты обладают большей непосредственностью, игривостью и доброжелательностью. На сегодняшний день конкретная порода имеет две ветви: классическую американскую и европейскую. Остановить выбор на представителе первой разновидности стоит в том случае, если вы ищете обаятельное ширококостное создание с круглыми глазами и пышной шубкой окраса табби. Европейцев отличают удлиненное тело, раскосый разрез глаз и в целом довольно разбойничий вид. 
+                    Шерстка у них не такая богатая, как у американских собратьев, зато хвост заметно длиннее, да и кисточки на ушах более ярко выражены.
+                </Paragraph>
+                <Paragraph FontSize="18">
+                    <Run Foreground="Green">Сколько стоит мейн-кун
+                    </Run>
+                </Paragraph>
+                <Paragraph>
+                    Главное правило, действующее в отношении котят «мэнского енота», гласит: дешевый мейн-кун – это не мейн-кун. На сегодняшний день стоимость котенка породы мейн-кун колеблется в районе 30 000 - 50 000 рублей, и это не предел. Установленный ценовой диапазон не прихоть владельцев питомников, а суровая необходимость, поскольку на содержание одного животного с момента его рождения и по достижении им трехмесячного возраста заведение тратит до 20 000 руб.
+                </Paragraph>
+                <BlockUIContainer>
+                    <StackPanel>
+                        <TextBlock Text="Нажми, если понравилась статья"/>
+                        <Button Content="Нравится!" Background="LightGreen"/>
+                    </StackPanel>
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Открыть" Width="120" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Width="120" Click="Button_Click_1"/>
+            <Button Content="Очистить" Width="120" Click="Button_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
